@@ -1,11 +1,13 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import ReactDemo from '../ReactDemo';
+import TabNavigator from './TabNavigator';
 
-const AppNavContainer: React.FC = () => {
+export type AppNavContainerProps = {};
+
+const AppNavContainer: React.FC<AppNavContainerProps> = () => {
   return (
     <NavigationContainer>
-      <ReactDemo />
+      <TabNavigator />
     </NavigationContainer>
   );
 };
